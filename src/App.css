@@ -3,13 +3,13 @@
 
 /* css variables */
 :root {
-  --primary-color: #379cf6;
+  --primary-color: #00A783;
   --heading-color: #fff;
-  --btn-primary-bg: #379cf6;
+  --btn-primary-bg: #04e7b6;
   --btn-secondary-bg: #090238;
   --team-card-bg: #1b2352;
   --link-color: #fff;
-  --link-active: #379cf6;
+  --link-active: #397a6c;
   --card-bg: linear-gradient(
     45deg,
     rgba(15, 18, 61, 1) 33%,
@@ -38,12 +38,12 @@
 .light-theme {
   --body-bg: rgb(255, 255, 255);
   --heading-color: #0c123d;
-  --btn-secondary-bg: #816aff;
+  --btn-secondary-bg: #04e7b6;
   --btn-primary-bg: #fff;
-  --primary-color: #816aff;
+  --primary-color: #00A783;
   --counter-color: #fff;
   --counter-section-bg: #816aff;
-  --link-color: #0c123d;
+  --link-color: #397a6c;
   --link-active: #816aff
   --newsletter-bg: linear-gradient(
     180deg,
@@ -57,6 +57,11 @@
   --team-card-bg: #fff;
 }
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body{
   background: var(--body-bg);
@@ -70,4 +75,10 @@ a{
 
 h1,h2{
   color: var(--heading-color);
+}
+
+.container{
+  width: 1140px;
+  padding: 0px 15px;
+  margin: auto;
 }

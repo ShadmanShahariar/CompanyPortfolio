@@ -1,4 +1,5 @@
 import React from "react";
+import "./header.css";
 
 const nav__links = [
   {
@@ -30,10 +31,8 @@ const Header = () => {
         <div className="container">
           <div className="nav__wrapper">
             <div className="logo">
-              <h2>Kendroo</h2>
-              <p>A Centralized Solution for All</p>
+              <h2>Kendroo.io</h2>
             </div>
-
             {/* navigation */}
             <div className="navigation">
               <ul className="menu">
@@ -47,6 +46,13 @@ const Header = () => {
               </ul>
             </div>
             {/* navigation--End */}
+            {/* light mode */}
+            <div className="light__mode">
+              <span>
+                <i class="ri-sun-line"></i>
+                Light Mode
+              </span>
+            </div>
           </div>
         </div>
       </header>
