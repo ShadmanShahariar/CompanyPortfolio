@@ -45,7 +45,7 @@
 
 .primary__btn {
   background: var(--btn-secondary-bg);
-  border: var(--btn-primary-bg);
+  border: 1px solid var(--btn-primary-bg);
 }
 .secondery__btn {
   background: var(--btn-primary-bg);
