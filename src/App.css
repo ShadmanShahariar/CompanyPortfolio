@@ -75,6 +75,7 @@ a{
 
 h1,h2{
   color: var(--heading-color);
+  font-style: 2rem;
 }
 
 section{
@@ -91,4 +92,11 @@ section{
   color: var(--small-text-color);
   line-height: 30px;
   font-size: .9rem;
+}
+
+.subtitle{
+  font-style: 1rem;
+  color: var(--primary-color);
+  font-weight: 400;
+  margin-bottom: 20px;
 }
