@@ -1,5 +1,6 @@
 {
   "name": "company",
+  "homepage": "https://betaportfolio.kendroo.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
