@@ -16,11 +16,11 @@ const teamMembers = [
     name: "Mahadi Hasan",
     position: "DevOps Engineer",
   },
-  {
-    imgUrl: team3,
-    name: "Imran Chowdhury",
-    position: "Software Engineer",
-  },
+  // {
+  //   imgUrl: team3,
+  //   name: "Imran Chowdhury",
+  //   position: "Software Engineer",
+  // },
   {
     imgUrl: team4,
     name: "Shourob Ahommod",

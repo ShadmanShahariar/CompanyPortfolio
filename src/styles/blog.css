@@ -1,0 +1,14 @@
+.blog__top-contant {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.blog__item {
+  width: 30%;
+  padding: 30px 25px;
+  background: var(--card-bg);
+}
+
+.blog__item img {
+  width: 100%;
+}
