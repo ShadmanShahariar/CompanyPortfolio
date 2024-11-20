@@ -14,7 +14,7 @@ const Hero = () => {
               <h2>Morden Solutions to</h2>
               <h2 className="highlight">Scale Your Business</h2>
             </div>
-            <p className="discription">
+            <p className="description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perferendis, officiis aliquam dignissimos perspiciatis repellendus
               quo.

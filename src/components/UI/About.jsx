@@ -30,7 +30,7 @@ const About = () => {
             <h6 className="subtitle">Why choose us</h6>
             <h2>Specialist in advising clients on</h2>
             <h2 className="highlight"> financial challenges</h2>
-            <p className="discription about__content-desc">
+            <p className="description about__content-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reprehenderit, soluta, quo cupiditate voluptatibus nostrum earum
               magnam sed voluptatem iste quaerat quasi labore ut culpa amet
@@ -44,7 +44,7 @@ const About = () => {
                   </span>
                   <div>
                     <h4 className="choose__us-title">{item.title}</h4>
-                    <p className="discription">{item.desc}</p>
+                    <p className="description">{item.desc}</p>
                   </div>
                 </div>
               ))}

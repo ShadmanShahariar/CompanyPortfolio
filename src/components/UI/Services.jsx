@@ -41,7 +41,7 @@ const Services = () => {
                 <i class={item.icon}></i>
               </span>
               <h3 className="services__title">{item.title}</h3>
-              <p className="discription">{item.desc}</p>
+              <p className="description">{item.desc}</p>
             </div>
           ))}
         </div>
