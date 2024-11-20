@@ -1,0 +1,54 @@
+.newsletter {
+  background: var(--newsletter-bg);
+}
+
+.newsletter__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newsletter__content,
+.newsletter__form {
+  width: 50%;
+}
+
+.newsletter__form input {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.newsletter__form {
+  padding: 0.4rem 1rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+}
+
+.secondary__btn {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.secondary__btn:hover {
+  background-color: var(--primary-color);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.secondary__btn:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
