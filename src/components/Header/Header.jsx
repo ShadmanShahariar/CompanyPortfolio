@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+// import React from "react";
 import "./header.css";
 
 const nav__links = [
@@ -7,16 +8,16 @@ const nav__links = [
     display: "Home",
   },
   {
-    path: "#about",
-    display: "About",
+    path: "#projects",
+    display: "Projects",
   },
   {
-    path: "#service",
+    path: "#services",
     display: "Service",
   },
   {
-    path: "#projects",
-    display: "Projects",
+    path: "#about",
+    display: "About",
   },
   {
     path: "#blogs",
@@ -25,9 +26,48 @@ const nav__links = [
 ];
 
 const Header = ({ theme, toggleTheme }) => {
+  const headerRef = useRef(null);
+
+  const handleScroll = () => {
+    if (
+      document.body.scrollTop > 80 ||
+      document.documentElement.scrollTop > 80
+    ) {
+      headerRef.current.classList.add("header__shrink");
+    } else {
+      headerRef.current.classList.remove("header__shrink");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleClick = (e) => {
+    e.preventDefault();
+
+    const targetAttr = e.target.getAttribute("href");
+    const targetElement = document.querySelector(targetAttr);
+
+    if (targetElement) {
+      const location = targetElement.offsetTop;
+
+      window.scrollTo({
+        top: location - 80,
+        behavior: "smooth",
+      });
+    } else {
+      console.error(`Target element not found: ${targetAttr}`);
+    }
+  };
   return (
     <div>
-      <header className="header">
+      <header className="header" ref={headerRef}>
+        {/* <header className="header"> */}
         <div className="container">
           <div className="nav__wrapper">
             <div className="logo">
@@ -37,8 +77,12 @@ const Header = ({ theme, toggleTheme }) => {
             <div className="navigation">
               <ul className="menu">
                 {nav__links.map((item, index) => (
-                  <li className="menu__item">
-                    <a href={item.path} className="menu__link">
+                  <li className="menu__item" key={index}>
+                    <a
+                      href={item.path}
+                      onClick={handleClick}
+                      className="menu__link"
+                    >
                       {item.display}
                     </a>
                   </li>

@@ -23,7 +23,7 @@ const chooseData = [
 
 const About = () => {
   return (
-    <section className="about">
+    <section id="about" className="about">
       <div className="container">
         <div className="about_wrapper">
           <div className="about_contant">
