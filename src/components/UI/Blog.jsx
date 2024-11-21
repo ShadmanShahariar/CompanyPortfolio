@@ -28,7 +28,7 @@ const blogData = [
 
 const Blog = () => {
   return (
-    <section className="our__blogs">
+    <section id="blog" className="blog">
       <div className="container">
         <div className="blog__top-contant">
           <h6 className="subtitle">Our blog</h6>

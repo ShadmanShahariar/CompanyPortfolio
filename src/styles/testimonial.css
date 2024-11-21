@@ -40,3 +40,7 @@
   color: white;
   font-weight: 500;
 }
+
+.light-theme .customer__name {
+  color: black;
+}

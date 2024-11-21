@@ -5,7 +5,11 @@
 
 .hero__content,
 .hero__image {
-  width: 60%;
+  width: 50%;
+}
+
+.hero__image img {
+  width: 100%;
 }
 
 .hero__content {
@@ -33,20 +37,53 @@
   column-gap: 2rem;
 }
 
-.primary__btn,
-.secondery__btn {
-  padding: 0.8rem 1.5rem;
+.primary__btn {
+  font-size: 1rem;
+  font-weight: bold;
   border: none;
-  outline: none;
+  padding: 0.7rem 1.5rem;
+  border: 1px solid var(--btn-primary-bg);
+  background: var(--btn-secondary-bg);
   color: #fff;
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.primary__btn {
-  background: var(--btn-secondary-bg);
-  border: 1px solid var(--btn-primary-bg);
-}
-.secondery__btn {
+.primary__btn:hover {
   background: var(--btn-primary-bg);
+  color: #000;
+  border-color: var(--btn-secondary-bg);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.primary__btn:focus {
+  outline: 2px solid var(--btn-primary-bg);
+  outline-offset: 2px;
+}
+
+.secondery__btn {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.secondery__btn:hover {
+  background-color: var(--primary-color);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.secondery__btn:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
 }

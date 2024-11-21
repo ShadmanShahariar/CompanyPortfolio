@@ -42,7 +42,7 @@
   --btn-secondary-bg: #252c2b;
   --primary-color: #00A783;
   --counter-color: #fff;
-  --counter-section-bg: #816aff;
+  --counter-section-bg: #7fe2cd;
   --link-color: #397a6c;
   --link-active: #816aff
   --newsletter-bg: linear-gradient(
@@ -99,4 +99,20 @@ section{
   color: var(--primary-color);
   font-weight: 400;
   margin-bottom: 20px;
+}
+
+.light-theme .counter{
+  background: var(--counter-section-bg);
+}
+
+.light-theme .secondery__btn{
+  border: 1px solid var(--primary-color);
+}
+
+.light-theme a{
+  font-weight: 500;
+}
+
+.light-theme .team__img{
+  background: #ddd;
 }
