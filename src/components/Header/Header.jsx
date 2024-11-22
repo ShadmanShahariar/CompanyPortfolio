@@ -26,6 +26,14 @@ const nav__links = [
 ];
 
 const Header = ({ theme, toggleTheme }) => {
+  // RESPONSIVE MENU
+
+  const menuRef = useRef(null);
+  const toggleMenu = () => {
+    menuRef.current.classList.toggle("menu_active");
+  };
+
+  //  STICY NAVIGATION-(NOTE-NOT WORKING)
   const headerRef = useRef(null);
 
   const handleScroll = () => {
@@ -47,6 +55,7 @@ const Header = ({ theme, toggleTheme }) => {
     };
   }, []);
 
+  // CLICK TO JUMP TO SECTION
   const handleClick = (e) => {
     e.preventDefault();
 
@@ -66,15 +75,15 @@ const Header = ({ theme, toggleTheme }) => {
   };
   return (
     <div>
-      <header className="header" ref={headerRef}>
+      <header id="home" className="header" ref={headerRef}>
         {/* <header className="header"> */}
         <div className="container">
           <div className="nav__wrapper">
             <div className="logo">
               <h2>Kendroo.io</h2>
             </div>
-            {/* navigation */}
-            <div className="navigation">
+            {/* NAVIGATION */}
+            <div className="navigation" ref={menuRef} onClick={toggleMenu}>
               <ul className="menu">
                 {nav__links.map((item, index) => (
                   <li className="menu__item" key={index}>
@@ -89,8 +98,8 @@ const Header = ({ theme, toggleTheme }) => {
                 ))}
               </ul>
             </div>
-            {/* navigation--End */}
-            {/* light mode */}
+
+            {/* LIGHT MODE */}
             <div className="light__mode">
               <span onClick={toggleTheme}>
                 {theme === "light-theme" ? (
@@ -105,6 +114,11 @@ const Header = ({ theme, toggleTheme }) => {
                 )}
               </span>
             </div>
+
+            {/* MOBILE MENU */}
+            <span className="mobile_menu" onClick={toggleMenu}>
+              <i class="ri-menu-line"></i>
+            </span>
           </div>
         </div>
       </header>

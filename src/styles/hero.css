@@ -87,3 +87,36 @@
   outline: 2px solid var(--primary-color);
   outline-offset: 2px;
 }
+
+/* RESPONSIVE CSS */
+
+@media only screen and (max-width: 992px) {
+  .hero__content h2 {
+    font-size: 1.8rem;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero__content h2 {
+    font-size: 1.5rem;
+    line-height: 45px;
+  }
+  .hero__content p {
+    font-size: 0.9rem;
+  }
+  .primary__btn,
+  .secondery__btn {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hero__content,
+  .hero__image {
+    width: 100%;
+  }
+  .hero__wrapper {
+    flex-direction: column;
+  }
+}

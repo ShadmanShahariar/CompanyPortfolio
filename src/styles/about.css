@@ -55,3 +55,30 @@
 .light-theme .choose__us-title {
   color: #000;
 }
+
+/* RESPONSIVE CSS */
+
+@media only screen and (max-width: 992px) {
+  .about_contant h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about_wrapper {
+    flex-direction: column;
+  }
+  .about_contant,
+  .about_img {
+    width: 100%;
+  }
+  .about_img {
+    height: 400px !important;
+  }
+  .about_contant {
+    margin-bottom: 30px;
+  }
+}
+
+/* @media only screen and (max-width: 576px) {
+} */

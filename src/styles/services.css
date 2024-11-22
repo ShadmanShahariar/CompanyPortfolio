@@ -18,6 +18,10 @@
   cursor: pointer;
 }
 
+.light-theme .services__item {
+  background: #4eccaa90;
+}
+
 .service__icon {
   width: 50px;
   height: 50px;
@@ -48,4 +52,34 @@
   color: var(--primary-color);
   font-size: 1.3rem;
   margin-bottom: 30px;
+}
+
+/* RESPONSIVE CSS */
+
+@media only screen and (max-width: 992px) {
+  .services__top-contant h2 {
+    font-size: 1.5rem;
+  }
+  .service_content-wrapper {
+    flex-wrap: wrap;
+  }
+  .services__item {
+    width: 31%;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .services__item {
+    width: 47.7%;
+  }
+  .services__title {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .services__item {
+    width: 100%;
+  }
 }

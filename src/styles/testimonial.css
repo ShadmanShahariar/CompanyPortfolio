@@ -16,6 +16,10 @@
   cursor: pointer;
 }
 
+.light-theme .slider__item {
+  background: #4eccaa90;
+}
+
 .customer__details {
   display: flex;
   align-items: center;
@@ -44,3 +48,24 @@
 .light-theme .customer__name {
   color: black;
 }
+
+/* RESPONSIVE CSS */
+
+@media only screen and (max-width: 992px) {
+  .slider__content-top h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .slider__wrapper {
+    width: 90%;
+  }
+
+  .customer__name {
+    font-size: 1rem;
+  }
+}
+
+/* @media only screen and (max-width: 576px) {
+} */
